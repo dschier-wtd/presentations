@@ -1,4 +1,4 @@
-...
+---
 - name: "Run bash Role"
   hosts: "localhost"
 
@@ -8,4 +8,3 @@
       ansible.builtin.import_role:
         name: "namespace.collection.bash"
 ...
-

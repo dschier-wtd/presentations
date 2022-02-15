@@ -1,6 +1,5 @@
 ---
 # roles/bash/meta/argument_specs.yml
-# reference: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-argument-validation
 
 argument_specs:
   # roles/bash/tasks/main.yml entry point

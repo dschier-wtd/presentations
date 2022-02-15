@@ -55,4 +55,3 @@ Please feel free to reach out to me to provide feedback or get in touch.
 - Blog: <https://blog.while-true-do.io>
 - Code: <https://github.com/dschier-wtd>
 - Mail: [dschier@while-true-do.io](mailto:dschier@while-true-do.io)
-

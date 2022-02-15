@@ -20,4 +20,3 @@ lint_yaml_task:
   install_script: "apk update && apk add yamllint"
   lint_script: "yamllint ."
 ...
-

@@ -3,7 +3,7 @@
 
 namespace: "namespace"
 name: "collection"
-description: "An Ansible collection to demonstrate arg specs and integration tests."
+description: "An Ansible collection to show arg specs and integration tests."
 
 version: "1.0.0"
 
