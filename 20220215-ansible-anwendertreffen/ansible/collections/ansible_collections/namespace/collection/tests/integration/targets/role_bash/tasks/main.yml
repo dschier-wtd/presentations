@@ -9,4 +9,6 @@
 - name: "Import bash Role"
   ansible.builtin.import_role:
     name: "namespace.collection.bash"
+  vars:
+    bash_package_names: 1234
 ...

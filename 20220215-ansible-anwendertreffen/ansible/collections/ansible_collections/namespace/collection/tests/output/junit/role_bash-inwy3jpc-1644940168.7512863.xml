@@ -1,0 +1,485 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="4" time="95.1238944530487">
+	<testsuite disabled="0" errors="0" failures="1" name="role_bash-inwy3jpc" skipped="0" tests="4" time="95.1238944530487">
+		<testcase classname="" name="[testhost] testhost: Gathering Facts gather_subset=['all'], gather_timeout=10" time="1.182220458984375">
+			<system-out>{
+&quot;ansible_facts&quot;: {
+&quot;ansible_all_ipv4_addresses&quot;: [
+&quot;10.0.2.100&quot;
+],
+&quot;ansible_all_ipv6_addresses&quot;: [
+&quot;fe80::3c77:51ff:fe64:7a3e&quot;
+],
+&quot;ansible_apparmor&quot;: {
+&quot;status&quot;: &quot;disabled&quot;
+},
+&quot;ansible_architecture&quot;: &quot;x86_64&quot;,
+&quot;ansible_bios_date&quot;: &quot;12/14/2021&quot;,
+&quot;ansible_bios_vendor&quot;: &quot;Dell Inc.&quot;,
+&quot;ansible_bios_version&quot;: &quot;3.4.0&quot;,
+&quot;ansible_board_asset_tag&quot;: &quot;NA&quot;,
+&quot;ansible_board_name&quot;: &quot;0GG9PT&quot;,
+&quot;ansible_board_serial&quot;: &quot;NA&quot;,
+&quot;ansible_board_vendor&quot;: &quot;Dell Inc.&quot;,
+&quot;ansible_board_version&quot;: &quot;A00&quot;,
+&quot;ansible_chassis_asset_tag&quot;: &quot;NA&quot;,
+&quot;ansible_chassis_serial&quot;: &quot;NA&quot;,
+&quot;ansible_chassis_vendor&quot;: &quot;Dell Inc.&quot;,
+&quot;ansible_chassis_version&quot;: &quot;NA&quot;,
+&quot;ansible_cmdline&quot;: {
+&quot;BOOT_IMAGE&quot;: &quot;(hd0,gpt2)/ostree/fedora-f674315d848b0cf3fe4fec33c0f6cfe0c2227df605f0cc66be9da5bc045561c4/vmlinuz-5.16.8-200.fc35.x86_64&quot;,
+&quot;ostree&quot;: &quot;/ostree/boot.1/fedora/f674315d848b0cf3fe4fec33c0f6cfe0c2227df605f0cc66be9da5bc045561c4/0&quot;,
+&quot;quiet&quot;: true,
+&quot;rhgb&quot;: true,
+&quot;root&quot;: &quot;UUID=cbf49a1f-e393-40af-9358-c695824846cf&quot;,
+&quot;rootflags&quot;: &quot;subvol=root&quot;
+},
+&quot;ansible_date_time&quot;: {
+&quot;date&quot;: &quot;2022-02-15&quot;,
+&quot;day&quot;: &quot;15&quot;,
+&quot;epoch&quot;: &quot;1644940074&quot;,
+&quot;epoch_int&quot;: &quot;1644940074&quot;,
+&quot;hour&quot;: &quot;15&quot;,
+&quot;iso8601&quot;: &quot;2022-02-15T15:47:54Z&quot;,
+&quot;iso8601_basic&quot;: &quot;20220215T154754305399&quot;,
+&quot;iso8601_basic_short&quot;: &quot;20220215T154754&quot;,
+&quot;iso8601_micro&quot;: &quot;2022-02-15T15:47:54.305399Z&quot;,
+&quot;minute&quot;: &quot;47&quot;,
+&quot;month&quot;: &quot;02&quot;,
+&quot;second&quot;: &quot;54&quot;,
+&quot;time&quot;: &quot;15:47:54&quot;,
+&quot;tz&quot;: &quot;UTC&quot;,
+&quot;tz_dst&quot;: &quot;UTC&quot;,
+&quot;tz_offset&quot;: &quot;+0000&quot;,
+&quot;weekday&quot;: &quot;Tuesday&quot;,
+&quot;weekday_number&quot;: &quot;2&quot;,
+&quot;weeknumber&quot;: &quot;07&quot;,
+&quot;year&quot;: &quot;2022&quot;
+},
+&quot;ansible_default_ipv4&quot;: {
+&quot;address&quot;: &quot;10.0.2.100&quot;,
+&quot;alias&quot;: &quot;tap0&quot;,
+&quot;broadcast&quot;: &quot;10.0.2.255&quot;,
+&quot;gateway&quot;: &quot;10.0.2.2&quot;,
+&quot;interface&quot;: &quot;tap0&quot;,
+&quot;macaddress&quot;: &quot;3e:77:51:64:7a:3e&quot;,
+&quot;mtu&quot;: 65520,
+&quot;netmask&quot;: &quot;255.255.255.0&quot;,
+&quot;network&quot;: &quot;10.0.2.0&quot;,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_default_ipv6&quot;: {},
+&quot;ansible_device_links&quot;: {
+&quot;ids&quot;: {},
+&quot;labels&quot;: {},
+&quot;masters&quot;: {},
+&quot;uuids&quot;: {}
+},
+&quot;ansible_devices&quot;: {
+&quot;nvme0n1&quot;: {
+&quot;holders&quot;: [],
+&quot;host&quot;: &quot;&quot;,
+&quot;links&quot;: {
+&quot;ids&quot;: [],
+&quot;labels&quot;: [],
+&quot;masters&quot;: [],
+&quot;uuids&quot;: []
+},
+&quot;model&quot;: &quot;PC SN730 NVMe WDC 1024GB&quot;,
+&quot;partitions&quot;: {
+&quot;nvme0n1p1&quot;: {
+&quot;holders&quot;: [],
+&quot;links&quot;: {
+&quot;ids&quot;: [],
+&quot;labels&quot;: [],
+&quot;masters&quot;: [],
+&quot;uuids&quot;: []
+},
+&quot;sectors&quot;: &quot;1228800&quot;,
+&quot;sectorsize&quot;: 512,
+&quot;size&quot;: &quot;600.00 MB&quot;,
+&quot;start&quot;: &quot;2048&quot;,
+&quot;uuid&quot;: null
+},
+&quot;nvme0n1p2&quot;: {
+&quot;holders&quot;: [],
+&quot;links&quot;: {
+&quot;ids&quot;: [],
+&quot;labels&quot;: [],
+&quot;masters&quot;: [],
+&quot;uuids&quot;: []
+},
+&quot;sectors&quot;: &quot;2097152&quot;,
+&quot;sectorsize&quot;: 512,
+&quot;size&quot;: &quot;1.00 GB&quot;,
+&quot;start&quot;: &quot;1230848&quot;,
+&quot;uuid&quot;: null
+},
+&quot;nvme0n1p3&quot;: {
+&quot;holders&quot;: [],
+&quot;links&quot;: {
+&quot;ids&quot;: [],
+&quot;labels&quot;: [],
+&quot;masters&quot;: [],
+&quot;uuids&quot;: []
+},
+&quot;sectors&quot;: &quot;1997080576&quot;,
+&quot;sectorsize&quot;: 512,
+&quot;size&quot;: &quot;952.28 GB&quot;,
+&quot;start&quot;: &quot;3328000&quot;,
+&quot;uuid&quot;: null
+}
+},
+&quot;removable&quot;: &quot;0&quot;,
+&quot;rotational&quot;: &quot;0&quot;,
+&quot;sas_address&quot;: null,
+&quot;sas_device_handle&quot;: null,
+&quot;scheduler_mode&quot;: &quot;none&quot;,
+&quot;sectors&quot;: &quot;2000409264&quot;,
+&quot;sectorsize&quot;: &quot;512&quot;,
+&quot;serial&quot;: &quot;204111455105&quot;,
+&quot;size&quot;: &quot;953.87 GB&quot;,
+&quot;support_discard&quot;: &quot;512&quot;,
+&quot;vendor&quot;: null,
+&quot;virtual&quot;: 1
+},
+&quot;zram0&quot;: {
+&quot;holders&quot;: [],
+&quot;host&quot;: &quot;&quot;,
+&quot;links&quot;: {
+&quot;ids&quot;: [],
+&quot;labels&quot;: [],
+&quot;masters&quot;: [],
+&quot;uuids&quot;: []
+},
+&quot;model&quot;: null,
+&quot;partitions&quot;: {},
+&quot;removable&quot;: &quot;0&quot;,
+&quot;rotational&quot;: &quot;0&quot;,
+&quot;sas_address&quot;: null,
+&quot;sas_device_handle&quot;: null,
+&quot;scheduler_mode&quot;: &quot;&quot;,
+&quot;sectors&quot;: &quot;16777216&quot;,
+&quot;sectorsize&quot;: &quot;4096&quot;,
+&quot;size&quot;: &quot;8.00 GB&quot;,
+&quot;support_discard&quot;: &quot;4096&quot;,
+&quot;vendor&quot;: null,
+&quot;virtual&quot;: 1
+}
+},
+&quot;ansible_distribution&quot;: &quot;Fedora&quot;,
+&quot;ansible_distribution_file_parsed&quot;: true,
+&quot;ansible_distribution_file_path&quot;: &quot;/etc/redhat-release&quot;,
+&quot;ansible_distribution_file_variety&quot;: &quot;RedHat&quot;,
+&quot;ansible_distribution_major_version&quot;: &quot;34&quot;,
+&quot;ansible_distribution_release&quot;: &quot;&quot;,
+&quot;ansible_distribution_version&quot;: &quot;34&quot;,
+&quot;ansible_dns&quot;: {
+&quot;nameservers&quot;: [
+&quot;10.0.2.3&quot;,
+&quot;192.168.178.1&quot;
+],
+&quot;search&quot;: [
+&quot;fritz.box&quot;
+]
+},
+&quot;ansible_domain&quot;: &quot;&quot;,
+&quot;ansible_effective_group_id&quot;: 0,
+&quot;ansible_effective_user_id&quot;: 0,
+&quot;ansible_env&quot;: {
+&quot;ANSIBLE_CALLBACKS_ENABLED&quot;: &quot;junit&quot;,
+&quot;ANSIBLE_COLLECTIONS_PATH&quot;: &quot;/root&quot;,
+&quot;ANSIBLE_CONFIG&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/integration/role_bash-d5l1ttdu-ÅÑŚÌβŁÈ/tests/integration/integration.cfg&quot;,
+&quot;ANSIBLE_DEPRECATION_WARNINGS&quot;: &quot;false&quot;,
+&quot;ANSIBLE_DEVEL_WARNING&quot;: &quot;false&quot;,
+&quot;ANSIBLE_FORCE_COLOR&quot;: &quot;true&quot;,
+&quot;ANSIBLE_FORCE_HANDLERS&quot;: &quot;true&quot;,
+&quot;ANSIBLE_HOST_KEY_CHECKING&quot;: &quot;false&quot;,
+&quot;ANSIBLE_HOST_PATTERN_MISMATCH&quot;: &quot;error&quot;,
+&quot;ANSIBLE_INVENTORY&quot;: &quot;/dev/null&quot;,
+&quot;ANSIBLE_JINJA2_NATIVE_WARNING&quot;: &quot;false&quot;,
+&quot;ANSIBLE_LIBRARY&quot;: &quot;/dev/null&quot;,
+&quot;ANSIBLE_PLAYBOOK_DIR&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/integration/role_bash-d5l1ttdu-ÅÑŚÌβŁÈ/tests/integration&quot;,
+&quot;ANSIBLE_PYTHON_INTERPRETER&quot;: &quot;/set/ansible_python_interpreter/in/inventory&quot;,
+&quot;ANSIBLE_PYTHON_MODULE_RLIMIT_NOFILE&quot;: &quot;1024&quot;,
+&quot;ANSIBLE_RETRY_FILES_ENABLED&quot;: &quot;false&quot;,
+&quot;ANSIBLE_ROLES_PATH&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/integration/role_bash-d5l1ttdu-ÅÑŚÌβŁÈ/tests/integration/targets&quot;,
+&quot;ANSIBLE_TEST_CI&quot;: &quot;&quot;,
+&quot;ANSIBLE_TEST_COVERAGE&quot;: &quot;&quot;,
+&quot;ANSIBLE_TEST_PYTHON_INTERPRETER&quot;: &quot;/usr/bin/python3.9&quot;,
+&quot;ANSIBLE_TEST_PYTHON_VERSION&quot;: &quot;3.9&quot;,
+&quot;ANSIBLE_WORKER_SHUTDOWN_POLL_COUNT&quot;: &quot;100&quot;,
+&quot;ANSIBLE_WORKER_SHUTDOWN_POLL_DELAY&quot;: &quot;0.1&quot;,
+&quot;HOME&quot;: &quot;/root&quot;,
+&quot;INVENTORY_PATH&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/integration/role_bash-d5l1ttdu-ÅÑŚÌβŁÈ/tests/integration/inventory&quot;,
+&quot;JUNIT_OUTPUT_DIR&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/junit&quot;,
+&quot;LC_ALL&quot;: &quot;en_US.UTF-8&quot;,
+&quot;OUTPUT_DIR&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/output_dir&quot;,
+&quot;PAGER&quot;: &quot;/bin/cat&quot;,
+&quot;PATH&quot;: &quot;/tmp/ansible-test-f_z7nzkz-injector:/tmp/python-xhw_16js-ansible:/root/ansible/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;,
+&quot;PWD&quot;: &quot;/root/ansible_collections/namespace/collection/tests/output/.tmp/integration/role_bash-d5l1ttdu-ÅÑŚÌβŁÈ/tests/integration&quot;,
+&quot;PYTHONPATH&quot;: &quot;/root/ansible/lib&quot;,
+&quot;SHLVL&quot;: &quot;1&quot;,
+&quot;_&quot;: &quot;/usr/bin/python3.9&quot;
+},
+&quot;ansible_fibre_channel_wwn&quot;: [],
+&quot;ansible_fips&quot;: false,
+&quot;ansible_form_factor&quot;: &quot;Notebook&quot;,
+&quot;ansible_fqdn&quot;: &quot;cfce0dca61b3&quot;,
+&quot;ansible_hostname&quot;: &quot;cfce0dca61b3&quot;,
+&quot;ansible_hostnqn&quot;: &quot;&quot;,
+&quot;ansible_interfaces&quot;: [
+&quot;tap0&quot;,
+&quot;lo&quot;
+],
+&quot;ansible_is_chroot&quot;: false,
+&quot;ansible_iscsi_iqn&quot;: &quot;&quot;,
+&quot;ansible_kernel&quot;: &quot;5.16.8-200.fc35.x86_64&quot;,
+&quot;ansible_kernel_version&quot;: &quot;#1 SMP PREEMPT Tue Feb 8 20:58:59 UTC 2022&quot;,
+&quot;ansible_lo&quot;: {
+&quot;active&quot;: true,
+&quot;device&quot;: &quot;lo&quot;,
+&quot;ipv4&quot;: {
+&quot;address&quot;: &quot;127.0.0.1&quot;,
+&quot;broadcast&quot;: &quot;&quot;,
+&quot;netmask&quot;: &quot;255.0.0.0&quot;,
+&quot;network&quot;: &quot;127.0.0.0&quot;
+},
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;::1&quot;,
+&quot;prefix&quot;: &quot;128&quot;,
+&quot;scope&quot;: &quot;host&quot;
+}
+],
+&quot;mtu&quot;: 65536,
+&quot;promisc&quot;: false,
+&quot;type&quot;: &quot;loopback&quot;
+},
+&quot;ansible_local&quot;: {},
+&quot;ansible_lsb&quot;: {},
+&quot;ansible_machine&quot;: &quot;x86_64&quot;,
+&quot;ansible_machine_id&quot;: &quot;10c8c54c0027455db7a0527e0dbb0521&quot;,
+&quot;ansible_memfree_mb&quot;: 6831,
+&quot;ansible_memory_mb&quot;: {
+&quot;nocache&quot;: {
+&quot;free&quot;: 12618,
+&quot;used&quot;: 3081
+},
+&quot;real&quot;: {
+&quot;free&quot;: 6831,
+&quot;total&quot;: 15699,
+&quot;used&quot;: 8868
+},
+&quot;swap&quot;: {
+&quot;cached&quot;: 0,
+&quot;free&quot;: 8191,
+&quot;total&quot;: 8191,
+&quot;used&quot;: 0
+}
+},
+&quot;ansible_memtotal_mb&quot;: 15699,
+&quot;ansible_mounts&quot;: [
+{
+&quot;block_available&quot;: 171398728,
+&quot;block_size&quot;: 4096,
+&quot;block_total&quot;: 249635072,
+&quot;block_used&quot;: 78236344,
+&quot;device&quot;: &quot;/dev/nvme0n1p3&quot;,
+&quot;fstype&quot;: &quot;btrfs&quot;,
+&quot;inode_available&quot;: 0,
+&quot;inode_total&quot;: 0,
+&quot;inode_used&quot;: 0,
+&quot;mount&quot;: &quot;/tmp&quot;,
+&quot;options&quot;: &quot;rw,seclabel,nosuid,nodev,relatime,ssd,space_cache,subvolid=256,subvol=/home,bind&quot;,
+&quot;size_available&quot;: 702049189888,
+&quot;size_total&quot;: 1022505254912,
+&quot;uuid&quot;: &quot;N/A&quot;
+},
+{
+&quot;block_available&quot;: 171398728,
+&quot;block_size&quot;: 4096,
+&quot;block_total&quot;: 249635072,
+&quot;block_used&quot;: 78236344,
+&quot;device&quot;: &quot;/dev/nvme0n1p3&quot;,
+&quot;fstype&quot;: &quot;btrfs&quot;,
+&quot;inode_available&quot;: 0,
+&quot;inode_total&quot;: 0,
+&quot;inode_used&quot;: 0,
+&quot;mount&quot;: &quot;/run&quot;,
+&quot;options&quot;: &quot;rw,seclabel,nosuid,nodev,relatime,ssd,space_cache,subvolid=256,subvol=/home,bind&quot;,
+&quot;size_available&quot;: 702049189888,
+&quot;size_total&quot;: 1022505254912,
+&quot;uuid&quot;: &quot;N/A&quot;
+}
+],
+&quot;ansible_nodename&quot;: &quot;cfce0dca61b3&quot;,
+&quot;ansible_os_family&quot;: &quot;RedHat&quot;,
+&quot;ansible_pkg_mgr&quot;: &quot;dnf&quot;,
+&quot;ansible_proc_cmdline&quot;: {
+&quot;BOOT_IMAGE&quot;: &quot;(hd0,gpt2)/ostree/fedora-f674315d848b0cf3fe4fec33c0f6cfe0c2227df605f0cc66be9da5bc045561c4/vmlinuz-5.16.8-200.fc35.x86_64&quot;,
+&quot;ostree&quot;: &quot;/ostree/boot.1/fedora/f674315d848b0cf3fe4fec33c0f6cfe0c2227df605f0cc66be9da5bc045561c4/0&quot;,
+&quot;quiet&quot;: true,
+&quot;rhgb&quot;: true,
+&quot;root&quot;: &quot;UUID=cbf49a1f-e393-40af-9358-c695824846cf&quot;,
+&quot;rootflags&quot;: &quot;subvol=root&quot;
+},
+&quot;ansible_processor&quot;: [
+&quot;0&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;1&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;2&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;3&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;4&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;5&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;6&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;,
+&quot;7&quot;,
+&quot;GenuineIntel&quot;,
+&quot;11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz&quot;
+],
+&quot;ansible_processor_cores&quot;: 4,
+&quot;ansible_processor_count&quot;: 1,
+&quot;ansible_processor_nproc&quot;: 8,
+&quot;ansible_processor_threads_per_core&quot;: 2,
+&quot;ansible_processor_vcpus&quot;: 8,
+&quot;ansible_product_name&quot;: &quot;XPS 13 9310&quot;,
+&quot;ansible_product_serial&quot;: &quot;NA&quot;,
+&quot;ansible_product_uuid&quot;: &quot;NA&quot;,
+&quot;ansible_product_version&quot;: &quot;NA&quot;,
+&quot;ansible_python&quot;: {
+&quot;executable&quot;: &quot;/usr/bin/python3.9&quot;,
+&quot;has_sslcontext&quot;: true,
+&quot;type&quot;: &quot;cpython&quot;,
+&quot;version&quot;: {
+&quot;major&quot;: 3,
+&quot;micro&quot;: 7,
+&quot;minor&quot;: 9,
+&quot;releaselevel&quot;: &quot;final&quot;,
+&quot;serial&quot;: 0
+},
+&quot;version_info&quot;: [
+3,
+9,
+7,
+&quot;final&quot;,
+0
+]
+},
+&quot;ansible_python_version&quot;: &quot;3.9.7&quot;,
+&quot;ansible_real_group_id&quot;: 0,
+&quot;ansible_real_user_id&quot;: 0,
+&quot;ansible_selinux&quot;: {
+&quot;status&quot;: &quot;disabled&quot;
+},
+&quot;ansible_selinux_python_present&quot;: true,
+&quot;ansible_service_mgr&quot;: &quot;systemd&quot;,
+&quot;ansible_ssh_host_key_dsa_public&quot;: &quot;AAAAB3NzaC1kc3MAAACBAMyklnhX7p6Y+mQl/NX0j72PkIOXvaWKKWyfFIqL3lp9UB7+OUP3gRkNEO1iWfyPtr8WMKrghOlEmHFE66YD5+z7sbjZTlKquG5lhEbgdkq54zj3Ha3Aw9pckJSh5STZVxhl4JdXUJU8CIyy733/86opSB7ees7Ywze0b0a+VlcfAAAAFQDiRQXzONVJzGEeoZ+xWPDFlO1qDwAAAIAf+jeGSHoDq3pZX7b0TR5mXp71J4LmmLjHcvdsnRTmayQz8onJu1sZnZGJp+UQECrz3s1Kq2nco+zmpme1Eeeqtq1egUjaj8Oh0Z11P7a3On62slLZf7k4ZBuR62p2FWqhOPoL8KlNP5VcJ8oLBZVqBroHoo5pKV3soMZjjE47zwAAAIEAtLmMzhsWHGoHqwsEJ0fPiJLaF/xW6nK6dSjla901gYMOzKPksSFFVoicyvfO4mHkTjODMjSFVD29rtG+Oflrt/YUvBfIZzOB8MoVpi26VsyN3RDFBIPNLlY15bR1/Dl2/t9QbSZTkdd0M8JFT4yi9WHgtRe2otmWghWUJ0Te4kY=&quot;,
+&quot;ansible_ssh_host_key_dsa_public_keytype&quot;: &quot;ssh-dss&quot;,
+&quot;ansible_ssh_host_key_ecdsa_public&quot;: &quot;AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBP1puPOEM69wP3MfClXe8t3l37E5tLxHOtvWHvau1P9oOYxa6VDKy663EDBDzGgU6J0K9uCcMG4xHcWcOS6+ePo=&quot;,
+&quot;ansible_ssh_host_key_ecdsa_public_keytype&quot;: &quot;ecdsa-sha2-nistp256&quot;,
+&quot;ansible_ssh_host_key_ed25519_public&quot;: &quot;AAAAC3NzaC1lZDI1NTE5AAAAICiwxYPIffg8dmRuaGW3e75qeWbn/jkQJNMSgbdXIGfe&quot;,
+&quot;ansible_ssh_host_key_ed25519_public_keytype&quot;: &quot;ssh-ed25519&quot;,
+&quot;ansible_ssh_host_key_rsa_public&quot;: &quot;AAAAB3NzaC1yc2EAAAADAQABAAABgQDWxs6QrXyT7FU9RT6wz8VNOaYnLSOF82bE6aZ2IStmdiHxQfym0HJHkehph5onSetIlm/6VmnRm5SVN7IjsmWwo0d0vz85RQmcVwzS15j0e8+vrPrbjpmZjRW/csmx4+56a7bWdaKGZfiODDkF0k2IUdOLAdZvFZYJGlSiLi9/+suQws2AsdB+0k3uEAtqrjj6NNz7N9slyED7+L2poyv2ve3BUkmeaoMpZTmv7JrwLH5Rk6xt2e7VdarI+unYGcOTUkllp00w0cwuwbGUGa6diNkF7U26tB6AGcoToCXzkmIIUfjRqpxxtaFHeADQZv14xvJv0SyLVPY+5NF/vUt5VTjfAHcmhszQdyDRqMJgiHQqTJNds8sug73l7i5KV5VFLzfCS1whFKzyCajJwfj/EHiisOhQVHRgzoprOPyCiTysrTiDAJquDimhQScj1qLGosWwFvW3C8/L4j0ZHMBPV6CeaNOWmA2c0b9GJDU6fZEbvoLAEary1JJtH4gCdwM=&quot;,
+&quot;ansible_ssh_host_key_rsa_public_keytype&quot;: &quot;ssh-rsa&quot;,
+&quot;ansible_swapfree_mb&quot;: 8191,
+&quot;ansible_swaptotal_mb&quot;: 8191,
+&quot;ansible_system&quot;: &quot;Linux&quot;,
+&quot;ansible_system_capabilities&quot;: [
+&quot;eip&quot;
+],
+&quot;ansible_system_capabilities_enforced&quot;: &quot;True&quot;,
+&quot;ansible_system_vendor&quot;: &quot;Dell Inc.&quot;,
+&quot;ansible_tap0&quot;: {
+&quot;active&quot;: true,
+&quot;device&quot;: &quot;tap0&quot;,
+&quot;ipv4&quot;: {
+&quot;address&quot;: &quot;10.0.2.100&quot;,
+&quot;broadcast&quot;: &quot;10.0.2.255&quot;,
+&quot;netmask&quot;: &quot;255.255.255.0&quot;,
+&quot;network&quot;: &quot;10.0.2.0&quot;
+},
+&quot;ipv6&quot;: [
+{
+&quot;address&quot;: &quot;fe80::3c77:51ff:fe64:7a3e&quot;,
+&quot;prefix&quot;: &quot;64&quot;,
+&quot;scope&quot;: &quot;link&quot;
+}
+],
+&quot;macaddress&quot;: &quot;3e:77:51:64:7a:3e&quot;,
+&quot;mtu&quot;: 65520,
+&quot;promisc&quot;: false,
+&quot;speed&quot;: 10,
+&quot;type&quot;: &quot;ether&quot;
+},
+&quot;ansible_uptime_seconds&quot;: 7523,
+&quot;ansible_user_dir&quot;: &quot;/root&quot;,
+&quot;ansible_user_gecos&quot;: &quot;root&quot;,
+&quot;ansible_user_gid&quot;: 0,
+&quot;ansible_user_id&quot;: &quot;root&quot;,
+&quot;ansible_user_shell&quot;: &quot;/bin/bash&quot;,
+&quot;ansible_user_uid&quot;: 0,
+&quot;ansible_userspace_architecture&quot;: &quot;x86_64&quot;,
+&quot;ansible_userspace_bits&quot;: &quot;64&quot;,
+&quot;ansible_virtualization_role&quot;: &quot;guest&quot;,
+&quot;ansible_virtualization_tech_guest&quot;: [
+&quot;container&quot;,
+&quot;docker&quot;
+],
+&quot;ansible_virtualization_tech_host&quot;: [
+&quot;kvm&quot;
+],
+&quot;ansible_virtualization_type&quot;: &quot;container&quot;,
+&quot;gather_subset&quot;: [
+&quot;all&quot;
+],
+&quot;module_setup&quot;: true
+},
+&quot;changed&quot;: false,
+&quot;deprecations&quot;: [],
+&quot;warnings&quot;: []
+}</system-out>
+		</testcase>
+		<testcase classname="" name="[testhost] testhost: namespace.collection.bash : Validating arguments against arg spec 'main' - The main entrypoint for bash. argument_spec={'bash_package_names': {'type': 'list', 'elements': 'str', 'default': ['bash', 'bash-completion'], 'description': 'Define the package names.'}, 'bash_package_state': {'type': 'str', 'choices': ['present', 'absent', 'latest'], 'default': 'present', 'description': 'Define the package state.'}}, provided_arguments={}, validate_args_context={'type': 'role', 'name': 'bash', 'argument_spec_name': 'main', 'path': '/root/ansible_collections/namespace/collection/roles/bash'}" time="0.01853799819946289">
+			<system-out>{
+&quot;changed&quot;: false,
+&quot;msg&quot;: &quot;The arg spec validation passed&quot;,
+&quot;validate_args_context&quot;: {
+&quot;argument_spec_name&quot;: &quot;main&quot;,
+&quot;name&quot;: &quot;bash&quot;,
+&quot;path&quot;: &quot;/root/ansible_collections/namespace/collection/roles/bash&quot;,
+&quot;type&quot;: &quot;role&quot;
+}
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/namespace/collection/roles/bash/tasks/main.yml:4" name="[testhost] testhost: namespace.collection.bash : Check input that=['bash_package_state is defined']" time="0.037506818771362305">
+			<system-out>{
+    &quot;changed&quot;: false,
+    &quot;msg&quot;: &quot;All assertions passed&quot;
+}</system-out>
+		</testcase>
+		<testcase classname="/root/ansible_collections/namespace/collection/roles/bash/tasks/main.yml:11" name="[testhost] testhost: namespace.collection.bash : Manage bash Packages name={{ bash_package_names }}, state={{ bash_package_state }}" time="93.8856291770935">
+			<failure message="Failed to install some of the specified packages" type="failure">{
+&quot;changed&quot;: false,
+&quot;failures&quot;: [
+&quot;No package 1234 available.&quot;
+],
+&quot;msg&quot;: &quot;Failed to install some of the specified packages&quot;,
+&quot;rc&quot;: 1,
+&quot;results&quot;: []
+}</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

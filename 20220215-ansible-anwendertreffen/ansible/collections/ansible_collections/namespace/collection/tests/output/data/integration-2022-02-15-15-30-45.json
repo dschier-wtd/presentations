@@ -1,0 +1,28 @@
+{
+    "targets": {
+        "role_bash": {
+            "aliases": [
+                "context//", 
+                "context//role_bash", 
+                "context/target/", 
+                "context/target/role_bash", 
+                "context/unknown/", 
+                "context/unknown/role_bash", 
+                "non_destructive/", 
+                "non_destructive/role_bash", 
+                "non_module/", 
+                "non_module/role_bash", 
+                "posix/", 
+                "role/", 
+                "role/role_bash", 
+                "role_bash"
+            ], 
+            "modules": [], 
+            "name": "role_bash", 
+            "run_time_seconds": 98, 
+            "setup_always": [], 
+            "setup_once": [], 
+            "type": "role"
+        }
+    }
+}
