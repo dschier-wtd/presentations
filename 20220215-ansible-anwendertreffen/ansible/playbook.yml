@@ -1,0 +1,11 @@
+...
+- name: "Run bash Role"
+  hosts: "localhost"
+
+  tasks:
+
+    - name: "Import bash Role"
+      ansible.builtin.import_role:
+        name: "namespace.collection.bash"
+...
+

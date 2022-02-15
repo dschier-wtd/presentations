@@ -1,0 +1,25 @@
+---
+# roles/bash/meta/argument_specs.yml
+# reference: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#role-argument-validation
+
+argument_specs:
+  # roles/bash/tasks/main.yml entry point
+  main:
+    short_description: "The main entrypoint for bash."
+    options:
+      bash_package_names:
+        type: "list"
+        elements: "str"
+        default:
+          - "bash"
+          - "bash-completion"
+        description: "Define the package names."
+      bash_package_state:
+        type: "str"
+        choices:
+          - "present"
+          - "absent"
+          - "latest"
+        default: "present"
+        description: "Define the package state."
+...

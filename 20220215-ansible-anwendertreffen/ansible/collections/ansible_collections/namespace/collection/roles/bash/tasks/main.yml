@@ -1,0 +1,19 @@
+---
+# roles/bash/tasks/main.yml
+
+- name: "Check input"
+  ansible.builtin.assert:
+    that:
+      - "bash_package_state is defined"
+
+## Package Management
+
+- name: "Manage bash Packages"
+  ansible.builtin.package:
+    name: "{{ bash_package_names }}"
+    state: "{{ bash_package_state }}"
+  become: true
+  tags:
+    - "bash"
+    - "package"
+...

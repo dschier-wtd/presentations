@@ -1,0 +1,23 @@
+---
+# reference: https://cirrus-ci.org/guide/writing-tasks/
+
+container:
+  cpu: 1
+  memory: "2G"
+
+# Sanity checks
+lint_markdown_task:
+  name: "Lint Markdown"
+  container:
+    image: "docker.io/library/node:latest"
+  install_script: "npm install -g markdownlint-cli"
+  lint_script: "markdownlint *.md"
+
+lint_yaml_task:
+  name: "Lint YAML"
+  container:
+    image: "docker.io/library/alpine:latest"
+  install_script: "apk update && apk add yamllint"
+  lint_script: "yamllint ."
+...
+

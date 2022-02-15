@@ -1,0 +1,12 @@
+---
+# tests/integration/targets/role_bash/tasks/main.yml
+
+################################################################################
+# This is a test role, specifically designed for testing. It should not be     #
+# used as a template for proper role development.                              #
+################################################################################
+
+- name: "Import bash Role"
+  ansible.builtin.import_role:
+    name: "namespace.collection.bash"
+...

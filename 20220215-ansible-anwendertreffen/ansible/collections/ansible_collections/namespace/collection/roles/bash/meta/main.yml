@@ -1,0 +1,6 @@
+---
+# roles/bash/meta/main.yml
+# reference: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#using-role-dependencies
+
+dependencies: []
+...

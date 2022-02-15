@@ -1,0 +1,10 @@
+---
+# roles/bash/defaults/main.yml
+
+## Package Management
+
+bash_package_names:
+  - "bash"
+  - "bash-completion"
+bash_package_state: "present"
+...

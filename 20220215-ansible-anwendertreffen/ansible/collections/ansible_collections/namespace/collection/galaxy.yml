@@ -1,0 +1,23 @@
+---
+# galaxy.yml for namespace.collection
+
+namespace: "namespace"
+name: "collection"
+description: "An Ansible collection to demonstrate arg specs and integration tests."
+
+version: "1.0.0"
+
+readme: "README.md"
+license_file: "LICENSE"
+
+homepage: "https://while-true-do.io"
+
+authors:
+  - "Daniel Schier <dschier@while-true-do.io>"
+
+tags:
+  - "test"
+  - "bash"
+
+dependencies: []
+...
