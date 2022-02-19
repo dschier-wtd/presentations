@@ -1,0 +1,10 @@
+FROM registry.fedoraproject.org/fedora-minimal:34
+
+RUN microdnf install -y httpd && \
+    microdnf clean all
+
+COPY files/ /var/www/html/
+
+EXPOSE 80
+
+CMD ["httpd", "-DFOREGROUND"]

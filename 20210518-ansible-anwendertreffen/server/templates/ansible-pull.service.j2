@@ -1,0 +1,20 @@
+{{ ansible_managed | comment }}
+
+[Unit]
+Description=Ansible Pull Service
+Wants=network.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/ansible-pull \
+          -U https://code.while-true-do.io/ddosug/ansible-anwendertreffen.git \
+          -i '%H', \
+          -C main \
+          -c local \
+          -d /var/lib/ansible \
+          --full \
+          server/site.yml
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

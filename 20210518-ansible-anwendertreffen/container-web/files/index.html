@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <!-- meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="HandheldFriendly" content="True" />
+  <!-- identity -->
+  <title>Ansible Anwendertreffen</title>
+  <meta name="Ansible + Podman for IoT, Edge and Tinkering" content="meta-description" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <!-- use Style-Cheat CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/style-cheat/css@1.0/dist/style-cheat.min.css" />
+  <!-- <link rel="stylesheet" href="../css/dist/style-cheat.min.css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header id="header" class="bg-primary fg-light" role="banner">
+    <div class="container text-center">
+      <h1 class="page-heading">Ansible Anwendertreffen</h1>
+      <p>Ansible + Podman for IoT, Edge and Tinkering</p>
+    </div>
+  </header> <!-- /#header -->
+
+  <main>
+    <article id="intro" class="bg-light">
+      <div class="container">
+        <h2>Intro</h2>
+        <p>IoT and edge devices like home servers, machine controller or IPCs
+          are somewhat special. They can be located in some factory corner, on
+          a car or ship. But they also need some love.
+        </p>
+        <p><a href="https://ww.ansible.com">Ansible</a> and
+          <a href="https://podman.io">Podman</a> can help with many of the
+          challeges, that one if facing with this kind of devices.</p>
+      </div>
+    </article> <!-- /#intro -->
+
+    <article id="challenges">
+      <div class="container">
+        <h2>Challenges</h2>
+        <ul>
+          <li>Is it on/off?</li>
+          <li>Is connectivity given?</li>
+          <li>Is latency and timeouts an issue?</li>
+          <li>Do I have a line of sight?</li>
+          <li>Is technical staff on site?</li>
+          <li>Is there an easy way to update?</li>
+          <li>What about recovery?</li>
+        </ul>
+      </div>
+    </article> <!-- /#challenges -->
+
+    <article id="solution" class="bg-light">
+      <div class="container">
+        <h2>Ansible and Podman to the rescue</h2>
+        <p>We need something simple, easy to debug, stateless, idempotent and
+          powerful enough to run without humans. Podman takes care of your
+          machine controller, application and whatever needs to be deployed
+          on site. Ansible configures the machine, the environment and takes
+          care of regular patching.
+        </p>
+      </div>
+    </article> <!-- /#solution -->
+
+  </main>
+
+  <article id="diagram">
+    <div class="container">
+      <h2>Diagram</h2>
+      <img src="img/ansible_podman.jpg">
+    </div>
+  </article> <!-- /#diagram -->
+
+</main>
+  <footer id="footer" class="bg-primary fg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Important Links</h5>
+            <p><a href="https://while-true-do.io"><i class="fas fa-fw fa-home"></i> Home</a></p>
+            <p><a href="https://code.while-true-do.io"><i class="fab fa-fw fa-github"></i> Code</a></p>
+          </div>
+        </div> <!-- /.col -->
+
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Contact</h5>
+            <p><a href="mailto:hello@while-true-do.io"><i class="fas fa-fw fa-envelope"></i> Mail</a></p>
+          </div>
+        </div> <!-- /.col -->
+
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Work</h5>
+            <p><a href="https://proficom.de">profi.com AG Web</a></p>
+            <p><a href="https://www.youtube.com/user/TheProficom">profi.com AG Youtube</a></p>
+            <p><a href="mailto:dschier@proficom.de">profi.com AG Mail</a></p>
+          </div>
+        </div> <!-- /.col -->
+
+        <div class="col">
+          <div class="box">
+            <h5 class="section-heading">Partners</h5>
+            <p><a href="https://while-true-do.io">while-true-do.io</a></p>
+            <p><a href="https://style-cheat.io">style-cheat.io</a></p>
+            <p><a href="https://gerri.io">gerri.io</a></p>
+            <p><a href="https://kudos-txt.io">kudos-txt.io</a></p>
+          </div>
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <p>Made with <span class="fg-alert">♥</span>, <a href="#">Font Awesome</a> and <a href="https://style-cheat.io">Style-Cheat</a>.</p>
+          </div>
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+  </footer> <!-- /#footer -->
+
+</body>
+</html>

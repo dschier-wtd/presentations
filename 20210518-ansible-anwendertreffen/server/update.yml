@@ -1,0 +1,23 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: "Update Server"
+  hosts: "all"
+
+  handlers:
+
+    - name: "Reboot System"
+      ansible.builtin.command:
+        cmd: "systemctl reboot --message='System Upgrade'"
+      become: true
+
+  tasks:
+
+    - name: "Update System"
+      ansible.builtin.package:
+        name: "*"
+        state: "latest"
+      become: true
+      notify:
+        - "Reboot System"
+...

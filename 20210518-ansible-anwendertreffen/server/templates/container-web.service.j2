@@ -1,0 +1,33 @@
+{{ ansible_managed | comment }}
+
+[Unit]
+Description=Podman container-web.service
+Wants=network.target
+After=network-online.target
+RequiresMountsFor=/var/lib/containers/storage /run/containers/storage
+
+[Service]
+Environment=PODMAN_SYSTEMD_UNIT=%n
+Restart=on-failure
+TimeoutStopSec=70
+ExecStartPre=/bin/rm -f %t/container-web.pid %t/container-web.ctr-id
+
+ExecStart=/usr/bin/podman run \
+          --conmon-pidfile %t/container-web.pid \
+          --cidfile %t/container-web.ctr-id \
+          --cgroups=no-conmon \
+          --replace \
+          --detach \
+          --name web \
+          --publish 80:80 \
+          --label=io.containers.autoupdate=image \
+          docker.io/whiletruedo/ansible-anwender-web:1.0.4
+ExecStartPost=/bin/sleep 1
+
+ExecStop=/usr/bin/podman stop --ignore --cidfile %t/container-web.ctr-id -t 10
+ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/container-web.ctr-id
+PIDFile=%t/container-web.pid
+Type=forking
+
+[Install]
+WantedBy=multi-user.target default.target

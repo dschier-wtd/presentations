@@ -1,0 +1,169 @@
+---
+- name: "Configure host"
+  hosts: "all"
+
+  handlers:
+
+    - name: "Restart Podman Services"
+      ansible.builtin.service:
+        name: "{{ item }}"
+        state: "restarted"
+      become: true
+      loop:
+        - "podman.socket"
+        - "podman-auto-update.timer"
+
+    - name: "Restart Cockpit Service"
+      ansible.builtin.service:
+        name: "cockpit.socket"
+        state: "restarted"
+      become: true
+
+  tasks:
+
+    # Users
+
+    - name: "Manage Admin User"
+      ansible.builtin.user:
+        name: "admin"
+        password: "{{ 'password' | password_hash('sha512', 'NotSoSalty') }}"
+        groups: "wheel"
+        state: "present"
+      become: true
+
+    # Ansible
+
+    - name: "Manage Ansible Packages"
+      ansible.builtin.package:
+        name:
+          - "ansible"
+          - "git"
+        state: "present"
+      become: true
+
+    - name: "Manage ansible-pull Service File"
+      ansible.builtin.template:
+        src: "ansible-pull.service.j2"
+        dest: "/etc/systemd/system/ansible-pull.service"
+        owner: "root"
+        group: "root"
+        mode: 0644
+      become: true
+
+    - name: "Manage ansible-pull Timer File"
+      ansible.builtin.template:
+        src: "ansible-pull.timer.j2"
+        dest: "/etc/systemd/system/ansible-pull.timer"
+        owner: "root"
+        group: "root"
+        mode: 0644
+      become: true
+
+    - name: "Manage ansible-pull Timer"
+      ansible.builtin.systemd:
+        name: "ansible-pull.timer"
+        state: "started"
+        enabled: true
+        daemon_reload: true
+      become: true
+
+    # Podman
+
+    - name: "Manage Podman Packages"
+      ansible.builtin.package:
+        name: "podman"
+        state: "present"
+      become: true
+
+    - name: "Manage podman-auto-update.d Directory"
+      ansible.builtin.file:
+        path: "/etc/systemd/system/podman-auto-update.timer.d"
+        state: "directory"
+        owner: "root"
+        group: "root"
+        mode: 0755
+      become: true
+
+    - name: "Manage podman-auto-update Timer File"
+      ansible.builtin.template:
+        src: "podman-auto-update.timer.override.conf.j2"
+        dest: "/etc/systemd/system/podman-auto-update.timer.d/override.conf"
+        owner: "root"
+        group: "root"
+        mode: 0644
+      become: true
+
+    - name: "Manage Podman Services"
+      ansible.builtin.systemd:
+        name: "{{ item }}"
+        state: "started"
+        enabled: true
+        daemon_reload: true
+      become: true
+      loop:
+        - "podman.socket"
+        - "podman-auto-update.timer"
+
+    # Cockpit
+
+    - name: "Manage Cockpit Packages"
+      ansible.builtin.package:
+        name:
+          - "cockpit"
+          - "cockpit-podman"
+          - "polkit"
+        state: "present"
+      become: true
+
+    - name: "Manage Cockpit Services"
+      ansible.builtin.service:
+        name: "cockpit.socket"
+        state: "started"
+        enabled: true
+      become: true
+
+- name: "Deploy Container Services"
+  hosts: "all"
+
+  handlers:
+
+    - name: "Restart container-web Service"
+      ansible.builtin.systemd:
+        name: "container-web.service"
+        state: "restarted"
+        daemon_reload: true
+      become: true
+
+  tasks:
+
+    # container-web
+
+    - name: "Manage container-web Service File"
+      ansible.builtin.template:
+        src: "container-web.service.j2"
+        dest: "/etc/systemd/system/container-web.service"
+        owner: "root"
+        group: "root"
+        mode: 0644
+      become: true
+      notify: "Restart container-web Service"
+
+    - name: "Manage container-web Service"
+      ansible.builtin.systemd:
+        name: "container-web.service"
+        state: "started"
+        enabled: true
+        daemon_reload: true
+      become: true
+
+- name: "Just some hints"
+  hosts: "all"
+  tasks:
+    - name: "Connect information Cockpit"
+      ansible.builtin.debug:
+        msg: "https://{{ ansible_default_ipv4.address }}:9090"
+
+    - name: "Connect information Application"
+      ansible.builtin.debug:
+        msg: "http://{{ ansible_default_ipv4.address }}"
+...
