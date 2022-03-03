@@ -28,12 +28,38 @@ you can find presentations from me.
 
 ### Content
 
-- [Ansible Anwendertreffen 2021](./20210518-ansible-anwendertreffen/)
-- [Ansible Anwendertreffen 2022](./20220215-ansible-anwendertreffen/)
+I am trying to gather my presentation content in this repository now. Since my
+slides and example code is always in english language, it may be useful for you.
+
+#### Conferences
+
+- [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test](./20220215-ansible-anwendertreffen/)
+- [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering](./20210518-ansible-anwendertreffen/)
 
 ### Links
 
-- TBD
+This section is an uncomplete collection of recordings and links to
+presentations and talks I have given. Most of them are in german language,
+though.
+
+#### Meetups
+
+- [DDOSUG 12/2021: Immutable Linux (ger)](https://www.youtube.com/watch?v=HGNs6qBWlXY)
+- [DDOSUG 05/2021: Micro Editor (ger)](https://www.youtube.com/watch?v=rGQj9W4ho2Y)
+- [DDOSUG 04/2021: Ansible Molecule with Podman/Docker (ger)](https://www.youtube.com/watch?v=W5xLYmsa9uk)
+- [DDOSUG 03/2021: Vagrant + ein bisschen Ansible (ger)](https://www.youtube.com/watch?v=U6Km6_H85Fk)
+- [DDOSUG 02/2021: Ansible Collections - Das "Was", "Warum" und "Wie" (ger)](https://www.youtube.com/watch?v=tFUQ065obXU)
+
+#### Webinars
+
+- [profi.com Webinar: Ansible - Wiederverwendbarer Code (ger)](https://www.youtube.com/watch?v=ANPx8hFXqog)
+- [profi.com Webinar: Ansible - Ein Überblick (ger)](https://www.youtube.com/watch?v=AiMjFiS-NY8)
+
+#### Conferences
+
+- [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test (ger)](https://www.youtube.com/watch?v=Cj_d1N8MIEM)
+- [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering (ger)](https://www.youtube.com/watch?v=ZsFLzEgK-_w)
+- [CLT 2019: Setup your workstation with Ansible (ger)](https://chemnitzer.linux-tage.de/2019/de/programm/beitrag/268)
 
 ## Contribute
 
