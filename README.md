@@ -58,6 +58,7 @@ though.
 
 #### Conferences
 
+- [CLT 2022: Ansible Live Presentations](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155)
 - [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test (ger)](https://www.youtube.com/watch?v=Cj_d1N8MIEM)
 - [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering (ger)](https://www.youtube.com/watch?v=ZsFLzEgK-_w)
 - [CLT 2019: Setup your workstation with Ansible (ger)](https://chemnitzer.linux-tage.de/2019/de/programm/beitrag/268)
