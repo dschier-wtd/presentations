@@ -33,6 +33,7 @@ slides and example code is always in english language, it may be useful for you.
 
 #### Conferences
 
+- [CLT 2022: Ansible Live Presentations](./20220312-clt-ansible/)
 - [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test](./20220215-ansible-anwendertreffen/)
 - [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering](./20210518-ansible-anwendertreffen/)
 
