@@ -1,0 +1,69 @@
+---
+# ansible/playbooks/configure.yml
+
+- name: "Configure homeserver"
+  hosts: "all"
+
+  vars:
+
+    httpd_packages:
+      - "httpd"
+      - "mod_ssl"
+      - "mod_md"
+    httpd_state: "latest"
+
+  handlers:
+
+    - name: "Restart httpd Service"
+      ansible.builtin.service:
+        name: "httpd.service"
+        state: "restarted"
+      become: true
+      tags:
+        - "httpd"
+        - "package"
+        - "service"
+
+  tasks:
+
+    - name: "Install apache httpd Packages"
+      ansible.builtin.package:
+        name: "{{ httpd_packages }}"
+        state: "{{ httpd_state }}"
+      become: true
+      notify:
+        - "Restart httpd Service"
+      tags:
+        - "httpd"
+        - "package"
+
+    - name: "Start and Enable httpd Service"
+      ansible.builtin.service:
+        name: "httpd.service"
+        state: "started"
+        enabled: true
+      become: true
+      tags:
+        - "httpd"
+        - "service"
+
+    - name: "Configure http firewall policy"
+      ansible.posix.firewalld:
+        service: "http"
+        state: "enabled"
+        immediate: true
+        permanent: true
+      become: true
+      tags:
+        - "httpd"
+        - "firewall"
+
+    - name: "Set timezone"
+      community.general.timezone:
+        name: "UTC"
+      become: true
+      tags:
+        - "timezone"
+        - "configuration"
+...
+
