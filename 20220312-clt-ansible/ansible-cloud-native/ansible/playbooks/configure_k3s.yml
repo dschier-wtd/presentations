@@ -1,0 +1,22 @@
+---
+# ansible/playbooks/configure_k3s.yml
+
+- name: "Install and configure k3s"
+  hosts: "all"
+
+  tasks:
+
+    - name: "Import misc Role"
+      ansible.builtin.import_role:
+        name: "whiletruedoio.general.misc"
+      tags:
+        - "k3s"
+        - "misc"
+
+    - name: "Import k3s Role"
+      ansible.builtin.import_role:
+        name: "whiletruedoio.general.k3s"
+      tags:
+        - "k3s"
+...
+

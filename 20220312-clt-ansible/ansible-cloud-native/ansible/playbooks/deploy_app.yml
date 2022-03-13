@@ -1,0 +1,45 @@
+---
+# ansible/playbooks/deploy_app.yml
+
+- name: "Deploy an App to Kubernetes"
+  hosts: "localhost"
+  connection: "local"
+
+  vars:
+
+    k8s_ns_state: "absent"
+
+  tasks:
+
+    - name: "Manage namespace"
+      kubernetes.core.k8s:
+        src: "../../kubernetes/namespace.yml"
+        state: "{{ k8s_ns_state }}"
+        kubeconfig: "/tmp/node01.kube.config"
+      tags:
+        - "k8s"
+
+    - name: "Create deployment"
+      kubernetes.core.k8s:
+        src: "../../kubernetes/deployment.yml"
+        state: "present"
+        kubeconfig: "/tmp/node01.kube.config"
+      tags:
+        - "k8s"
+
+    - name: "Create service"
+      kubernetes.core.k8s:
+        src: "../../kubernetes/service.yml"
+        state: "present"
+        kubeconfig: "/tmp/node01.kube.config"
+      tags:
+        - "k8s"
+
+    - name: "Create ingress"
+      kubernetes.core.k8s:
+        src: "../../kubernetes/ingress.yml"
+        state: "present"
+        kubeconfig: "/tmp/node01.kube.config"
+      tags:
+        - "k8s"
+...

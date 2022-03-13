@@ -1,0 +1,27 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "template-deployment"
+  namespace: "template"
+spec:
+  selector:
+    matchLabels:
+      component: "web"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: "web"
+    spec:
+      containers:
+        - name: "template"
+          image: "docker.io/whiletruedoio/template:latest"
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "250m"
+          ports:
+            - containerPort: 80
+...
+

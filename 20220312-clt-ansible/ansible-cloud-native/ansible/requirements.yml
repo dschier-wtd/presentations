@@ -1,0 +1,12 @@
+---
+# ansible/requirements.yml
+
+collections:
+
+  - name: "git@github.com:whiletruedoio/whiletruedoio.general.git"
+    type: "git"
+    version: "main"
+
+  - name: "kubernetes.core"
+...
+
