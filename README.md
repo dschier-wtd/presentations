@@ -15,62 +15,176 @@ Material for presentations and talks I have given.
 
 ## Motivation
 
-I just wanted to publish my presentation content that I worked on
-for conferences, meetups and more. Maybe it is helpful for someone
-else, too.
+I just wanted to publish my presentation content that I worked on for
+conferences, meetups and more. Maybe it is helpful for someone else, too.
 
 ## Description
 
-The repository contains all kinds of unsorted material like
-presentations, code examples, snippets and more. Furthermore,
-I have added a couple of links to other repositories, where
-you can find presentations from me.
+The repository contains all kinds of unsorted material like presentations, code
+examples, snippets and more. Furthermore, I have added a couple of links to
+other repositories, where you can find presentations from me.
 
-### Content
+## Content
 
 I am trying to gather my presentation content in this repository now. Since my
-slides and example code is always in english language, it may be useful for you.
+slides and example code is always in **English** language, it may be useful for
+you. Most recordings are done in German language, though.
 
-#### Conferences
+### 2022
 
-- [CLT 2022: Ansible Live Presentations](./20220312-clt-ansible/)
-- [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test](./20220215-ansible-anwendertreffen/)
-- [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering](./20210518-ansible-anwendertreffen/)
+#### Ansible - The very first steps
 
-### Links
+A 30 minute talk about the very first steps to get started with Ansible. It was
+about the installation, basic conceots and writing the first mini playbook.
 
-This section is an uncomplete collection of recordings and links to
-presentations and talks I have given. Most of them are in german language,
-though.
+- event: Chemnitzer Linuxtage 2022
+- type: Lecture
+- language: english
+- links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155),
+  [slides](./20220312-clt-ansible/ansible-first-steps.pdf),
+  [code](./20220312-clt-ansible/ansible-first-steps/)
 
-#### Meetups
+#### Ansible in a Cloud (Native) World
 
-- [DDOSUG 12/2021: Immutable Linux (ger)](https://www.youtube.com/watch?v=HGNs6qBWlXY)
-- [DDOSUG 05/2021: Micro Editor (ger)](https://www.youtube.com/watch?v=rGQj9W4ho2Y)
-- [DDOSUG 04/2021: Ansible Molecule with Podman/Docker (ger)](https://www.youtube.com/watch?v=W5xLYmsa9uk)
-- [DDOSUG 03/2021: Vagrant + ein bisschen Ansible (ger)](https://www.youtube.com/watch?v=U6Km6_H85Fk)
-- [DDOSUG 02/2021: Ansible Collections - Das "Was", "Warum" und "Wie" (ger)](https://www.youtube.com/watch?v=tFUQ065obXU)
+The talk was about how Ansible can be used in a Cloud (Native) world and how it
+can help small teams. Avoiding the "learn a new the tool everyday"-loop and
+one-trick-ponies were also part of the talk. In the demo part, a k3s setup and
+deployment of a simple Kubernetes application was shown.
 
-#### Webinars
+- event: Chemnitzer Linuxtage 2022
+- type: Lecture
+- language: german/english
+- links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/156),
+  [video](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/156),
+  [slides](./20220312-clt-ansible/ansible-cloud-native.pdf),
+  [code](./20220312-clt-ansible/ansible-cloud-native/)
 
-- [profi.com Webinar: Ansible - Wiederverwendbarer Code (ger)](https://www.youtube.com/watch?v=ANPx8hFXqog)
-- [profi.com Webinar: Ansible - Ein Überblick (ger)](https://www.youtube.com/watch?v=AiMjFiS-NY8)
+#### Ansible 2.12
 
-#### Conferences
+A talk for the Ansible community presentation booth at the CLT showing new
+features and changes since Ansible 2.9.
 
-- [CLT 2022: Ansible Lecture](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/156)
-- [CLT 2022: Ansible Live Presentations](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155)
-- [Ansible Anwendertreffen 2022: Argument Specs + Ansible Test (ger)](https://www.youtube.com/watch?v=Cj_d1N8MIEM)
-- [Ansible Anwendertreffen 2021: Ansible + Podman for IoT and Tinkering (ger)](https://www.youtube.com/watch?v=ZsFLzEgK-_w)
+- event: Chemnitzer Linuxtage 2022
+- type: Talk
+- language: english
+- links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155),
+  [slides](./20220312-clt-ansible/ansible-2.12.pdf)
+
+#### Ansible Validation and Integration Testing
+
+A lecture about testing in Ansible and demonstrating how argument specifications
+work. It is also shown how integration testing can be done in collections.
+
+- event: Ansible Anwendertreffen 2022
+- type: Lecture
+- language: german/english
+- links: [link](https://www.ansible-anwender.de/post/2022/02/rueckblick/),
+  [video](https://www.youtube.com/watch?v=Cj_d1N8MIEM),
+  [slides](./20220215-ansible-anwendertreffen/Ansible_Validation_Integration_Testing_Roles.pdf),
+  [code](./20220215-ansible-anwendertreffen/ansible/)
+
+### 2021
+
+#### Ansible + Podman for IoT and Tinkering
+
+A lecture explaining how Ansible can be used in IoT situations and in
+combination with Podman to provide an automatic update pull behavior for
+configuration and software updates.
+
+- event: Ansible Anwendertreffen 2021
+- type: Lecture
+- language: german/english
+- links: [link](https://www.ansible-anwender.de/post/2021/05/rueckblick/),
+  [video](https://www.youtube.com/watch?v=ZsFLzEgK-_w),
+  [slides](./20210518-ansible-anwendertreffen/ansible_podman_for_iot_edge_and_tinkering.pdf),
+  [code](./20210518-ansible-anwendertreffen/)
+
+#### Immutable Linux
+
+A short talk about different immutable GNU/Linux distributions.
+
+- event: DDOSUG Meetup 12/2021
+- type: talk
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=HGNs6qBWlXY)
+
+#### Micro Editor
+
+A talk about the micro editor and how it compares to nano and vim.
+
+- event: DDOSUG Meetup 05/2021
+- type: talk
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=rGQj9W4ho2Y)
+
+#### Ansible - Wiederverwendbarer Code (ger)
+
+This talk is part of a webinar series for my employer profi.com AG that shows
+how you can start developing re-usable code in roles and collections.
+
+- event: profi.com AG Webinar series
+- type: webinar
+- language: german
+- links: [](https://www.youtube.com/watch?v=ANPx8hFXqog)
+
+#### Ansible Molecule with Podman/Docker
+
+A talk about Testing with Molecule and facilitating Podman and Docker for
+integration and functional testing of Ansible Roles.
+
+- event: DDOSUG Meetup 04/2021
+- type: talk
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=W5xLYmsa9uk)
+
+#### Ansible - Ein Überblick
+
+A webinar to start a series about Ansible for my employer profi.com AG. In the
+talk I am explaining how the ecosystem of Ansible looks like and what you can
+expect if you want to dig into Ansible.
+
+- event: profi.com AG Webinar series
+- type: webinar
+- language: german
+- links: [video](https://www.youtube.com/watch?v=AiMjFiS-NY8)
+
+#### Vagrant + ein bisschen Ansible
+
+A talk showing how Vagrant works and how you can use Ansible to configure the
+vagrant machines.
+
+- event: DDOSUG Meetup 03/2021
+- type: talk
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=U6Km6_H85Fk)
+
+#### Ansible Collections - Das "Was", "Warum" und "Wie"
+
+A short talk about Ansible collections, that demonstrates how collections work
+and how you can use them.
+
+- event: DDOSUG Meetup 01/2021
+- type: talk
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=tFUQ065obXU)
+
+### 2020
+
+TBD
+
+### 2019
+
+TBD
+
 - [CLT 2019: Setup your workstation with Ansible (ger)](https://chemnitzer.linux-tage.de/2019/de/programm/beitrag/268)
 
 ## Contribute
 
-The repository contains content of things that happened in the past.
-Therefore, I am not investing much time to keep code examples up-to-date
-or fiddle with minor issues. Nevertheles, if you find something, that is
-either downright wrong or content is not usable from your side, please
-feel free to open an issue or provide a pull request.
+The repository contains content and things that happened in the past. Therefore,
+I am not investing much time to keep code examples up-to-date or fiddle with
+minor issues. Nevertheles, if you find something, that is either downright
+wrong or content is not usable from your side, please feel free to open an
+issue or provide a pull request.
 
 ## License
 
