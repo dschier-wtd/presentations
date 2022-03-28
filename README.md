@@ -70,6 +70,17 @@ features and changes since Ansible 2.9.
 - links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155),
   [slides](./20220312-clt-ansible/ansible-2.12.pdf)
 
+#### Fedora Smart Display and Mirror
+
+A talk for the "Makers' March Meetup" to demonstrate my Fedora Smartdisplay
+code and talk about the setup. There will be Raspberries and Ansible.
+
+- event: "Makers' March Meetup (DDOSUG + SLUB Makerspace)"
+- type: Talk
+- language: german
+- links: [slides](./20220310-makers-march-meetup/makers_march_smart_display.pdf),
+  [code](https://github.com/dschier-wtd/fedora-smartdisplay/)
+
 #### Ansible Validation and Integration Testing
 
 A lecture about testing in Ansible and demonstrating how argument specifications
@@ -106,7 +117,8 @@ A short talk about different immutable GNU/Linux distributions.
 - event: DDOSUG Meetup 12/2021
 - type: talk
 - language: german/english
-- links: [video](https://www.youtube.com/watch?v=HGNs6qBWlXY)
+- links: [video](https://www.youtube.com/watch?v=HGNs6qBWlXY),
+  [slides](./20211215-ddosug-meetup/immutable-linux.pdf)
 
 #### Micro Editor
 
