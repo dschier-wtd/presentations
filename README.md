@@ -125,7 +125,7 @@ how you can start developing re-usable code in roles and collections.
 - event: profi.com AG Webinar series
 - type: webinar
 - language: german
-- links: [](https://www.youtube.com/watch?v=ANPx8hFXqog)
+- links: [video](https://www.youtube.com/watch?v=ANPx8hFXqog)
 
 #### Ansible Molecule with Podman/Docker
 
