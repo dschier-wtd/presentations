@@ -32,6 +32,21 @@ you. Most recordings are done in German language, though.
 
 ### 2022
 
+#### The perfect SCRUM sprint
+
+This was a BarCamp style session and the presentation material is more or less
+for orientation purposes. It wasn't used during the session but to prepare my
+course and get an idea what I want to talk about. The attached drawio file was
+drawn to the board and we talked about optimization potentioals to take care of
+work weeks, avoid weekend work and such stuff.
+
+- event: Agile Meetup #30
+- type: Lecture
+- date: 29.03.2022
+- language: english
+- links: [slides](./20220329-agile-dresden-meetup/perfect_scrum.pdf),
+  [drawio](./20220329-agile-dresden-meetup/perfect_scrum.drawio)
+
 #### Ansible - The very first steps
 
 A 30 minute talk about the very first steps to get started with Ansible. It was
@@ -39,6 +54,7 @@ about the installation, basic conceots and writing the first mini playbook.
 
 - event: Chemnitzer Linuxtage 2022
 - type: Lecture
+- date: 12.03.2022
 - language: english
 - links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155),
   [slides](./20220312-clt-ansible/ansible-first-steps.pdf),
@@ -53,6 +69,7 @@ deployment of a simple Kubernetes application was shown.
 
 - event: Chemnitzer Linuxtage 2022
 - type: Lecture
+- date: 12.03.2022
 - language: german/english
 - links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/156),
   [video](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/156),
@@ -66,6 +83,7 @@ features and changes since Ansible 2.9.
 
 - event: Chemnitzer Linuxtage 2022
 - type: Talk
+- date: 12.03.2022
 - language: english
 - links: [link](https://chemnitzer.linux-tage.de/2022/en/programm/beitrag/155),
   [slides](./20220312-clt-ansible/ansible-2.12.pdf)
@@ -77,6 +95,7 @@ code and talk about the setup. There will be Raspberries and Ansible.
 
 - event: "Makers' March Meetup (DDOSUG + SLUB Makerspace)"
 - type: Talk
+- date: 10.03.2022
 - language: german
 - links: [slides](./20220310-makers-march-meetup/makers_march_smart_display.pdf),
   [code](https://github.com/dschier-wtd/fedora-smartdisplay/)
@@ -88,6 +107,7 @@ work. It is also shown how integration testing can be done in collections.
 
 - event: Ansible Anwendertreffen 2022
 - type: Lecture
+- date: 15.02.2022
 - language: german/english
 - links: [link](https://www.ansible-anwender.de/post/2022/02/rueckblick/),
   [video](https://www.youtube.com/watch?v=Cj_d1N8MIEM),
@@ -95,6 +115,17 @@ work. It is also shown how integration testing can be done in collections.
   [code](./20220215-ansible-anwendertreffen/ansible/)
 
 ### 2021
+
+#### Immutable Linux
+
+A short talk about different immutable GNU/Linux distributions.
+
+- event: DDOSUG Meetup 12/2021
+- type: talk
+- date: 15.12.2021
+- language: german/english
+- links: [video](https://www.youtube.com/watch?v=HGNs6qBWlXY),
+  [slides](./20211215-ddosug-meetup/immutable-linux.pdf)
 
 #### Ansible + Podman for IoT and Tinkering
 
@@ -104,21 +135,12 @@ configuration and software updates.
 
 - event: Ansible Anwendertreffen 2021
 - type: Lecture
+- date: 18.05.2021
 - language: german/english
 - links: [link](https://www.ansible-anwender.de/post/2021/05/rueckblick/),
   [video](https://www.youtube.com/watch?v=ZsFLzEgK-_w),
   [slides](./20210518-ansible-anwendertreffen/ansible_podman_for_iot_edge_and_tinkering.pdf),
   [code](./20210518-ansible-anwendertreffen/)
-
-#### Immutable Linux
-
-A short talk about different immutable GNU/Linux distributions.
-
-- event: DDOSUG Meetup 12/2021
-- type: talk
-- language: german/english
-- links: [video](https://www.youtube.com/watch?v=HGNs6qBWlXY),
-  [slides](./20211215-ddosug-meetup/immutable-linux.pdf)
 
 #### Micro Editor
 
