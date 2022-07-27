@@ -32,6 +32,22 @@ you. Most recordings are done in German language, though.
 
 ### 2022
 
+#### Smart Devices
+
+A two part workshop about programming smart devices with a Raspberry Pi. It is
+mostly about starter examples for coding, but also about starting the Raspberry
+with an attached display in a Kiosk mode.
+
+At the end, one is able to use gpiozero and Python on a Raspberry to turn on
+an LED via touchscreen, web, button and command line. A good starting point for
+further investigation and experimenting.
+
+- event: SLUB Smart Displays / Smart Devices
+- type: Workshop
+- date: 25.07.2022
+- language: english
+- links: [slides and examples](./20220725-slub-smart-devices/)
+
 #### The perfect SCRUM sprint
 
 This was a BarCamp style session and the presentation material is more or less
