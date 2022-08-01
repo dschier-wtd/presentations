@@ -1,0 +1,10 @@
+[Unit]
+Description=A bit about your service
+
+[Service]
+Type=simple
+ExecStart=python /usr/local/bin/web_3.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

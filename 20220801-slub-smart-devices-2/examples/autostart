@@ -1,0 +1,9 @@
+#@lxpanel --profile LXDE
+#@pcmanfm --desktop --profile LXDE
+#@xscreensaver -no-splash
+@midori -e fullscreen -e -a http://localhost:8080
+#@chromium --kiosk --incognito http://localhost:8080
+@xset s noblank
+@xset s off
+@xset -dpms
+#@unclutter -idle 0.1 -roo
