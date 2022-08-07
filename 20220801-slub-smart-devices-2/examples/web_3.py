@@ -20,7 +20,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.end_headers()
         html = '''
            <html>
-           <body 
+           <body
             style="width:960px; margin: 20px auto;">
            <h1>My Smart Pi</h1>
            <form action="/" method="POST">
@@ -49,9 +49,9 @@ class MyServer(BaseHTTPRequestHandler):
         elif post_data == 'LED_1=Off':
             led_1.off()
         elif post_data == 'LED_2=On':
-            led_1.off()
+            led_2.on()
         elif post_data == 'LED_2=Off':
-            led_1.off()
+            led_2.off()
 
         self._redirect('/')
 

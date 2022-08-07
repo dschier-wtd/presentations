@@ -44,9 +44,10 @@ further investigation and experimenting.
 
 - event: SLUB Smart Displays / Smart Devices
 - type: Workshop
-- date: 25.07.2022
+- date: 25.07.2022, 01.08.2022
 - language: english
-- links: [slides and examples](./20220725-slub-smart-devices/)
+- links 1: [slides and examples](./20220725-slub-smart-devices-1/)
+- links 2: [slides and examples](./20220801-slub-smart-devices-2/)
 
 #### The perfect SCRUM sprint
 
