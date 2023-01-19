@@ -30,6 +30,20 @@ I am trying to gather my presentation content in this repository now. Since my
 slides and example code is always in **English** language, it may be useful for
 you. Most recordings are done in German language, though.
 
+### 2023
+
+#### DevOps Workshop
+
+A workshop to explain DevOps ideals, metrics and KPIs. It was also about
+decision methods and frameworks. Team topologies was in there and some ideas
+to design DevSecOps pipelines.
+
+- event: DevOps Workshop
+- type: Workshop
+- date: 19.01.2023
+- language: english
+- links: [docs and examples](./20230119-devops-workshop/)
+
 ### 2022
 
 #### Smart Devices
