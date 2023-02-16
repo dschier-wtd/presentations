@@ -1,0 +1,21 @@
+# Build Image
+FROM registry.fedoraproject.org/fedora:35 AS gobuild
+
+RUN dnf -y install golang \
+      --nodocs \
+      --setopt install_weak_deps=False && \
+    dnf clean all
+
+WORKDIR /usr/local/src/hello
+
+COPY app/ /usr/local/src/hello
+
+RUN go mod init hello
+RUN go build -o /usr/local/bin/hello hello.go
+
+# Final Image
+FROM scratch
+
+COPY --from=gobuild /usr/local/bin/hello /usr/local/bin/hello
+
+CMD ["/usr/local/bin/hello"]
