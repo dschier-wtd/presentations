@@ -32,6 +32,17 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
+#### Internet of Things (IoT) without Alexa, Google or else
+
+A lecture for the Chemnitz Linux Days/Chemnitzer Linuxtage, explaining how
+one can do IoT, without using Google, Alexa or other cloud providers.
+
+- event: CLT 2023
+- type: Lecture
+- date: 11.03.2023
+- language: english/german
+- links: [docs and examples](./20230311-clt-lecture-iot)
+
 #### DevOps Workshop
 
 A workshop to explain DevOps ideals, metrics and KPIs. It was also about
