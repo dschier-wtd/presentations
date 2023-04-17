@@ -32,6 +32,16 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
+#### Ansible - Dynamic Inventories
+
+A short lightning talk for the Ansible Meetup.
+
+- event: Ansible Meetup Dresden
+- type: Lightning Talk
+- date: 13.04.2023
+- language: german
+- links: [demo code](./20230413-ansible-meetup/)
+
 #### Internet of Things (IoT) without Alexa, Google or else
 
 A lecture for the Chemnitz Linux Days/Chemnitzer Linuxtage, explaining how

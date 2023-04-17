@@ -1,0 +1,12 @@
+---
+# Demo playbook for the Ansible Meetup
+
+- name: "Dynamic Inventories with Kubernetes"
+  hosts: "localhost"
+
+  tasks:
+
+    - name: "Gimme dat groups"
+      ansible.builtin.debug:
+        msg: "{{ groups }}"
+...
