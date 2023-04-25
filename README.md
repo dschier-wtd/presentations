@@ -34,6 +34,16 @@ you. Most recordings are done in German language, though.
 
 #### Ansible - Dynamic Inventories
 
+A short talk about IoT with Ansible and Podman.
+
+- event: Ad-Hoc presentation
+- type: Lightning Talk
+- date: 25.04.2023
+- language: english
+- links: [demo code and slides](./20230425-iot-presentation/)
+
+#### Ansible - Dynamic Inventories
+
 A short lightning talk for the Ansible Meetup.
 
 - event: Ansible Meetup Dresden
