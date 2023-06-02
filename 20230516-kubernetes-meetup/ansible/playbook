@@ -1,0 +1,25 @@
+#!/usr/bin/env ansible-playbook
+
+# Demo playbook for Kubernetes
+
+- name: "Deploy to Kubernetes"
+  hosts: "localhost"
+  gather_facts: false
+
+  vars:
+    web_replicas: "1"
+    web_limit_memory: "512Mi"
+    web_limit_cpu: "500m"
+
+  tasks:
+
+    - name: "Deploy Web"
+      kubernetes.core.k8s:
+        state: "present"
+        template:
+          - path: "web_namespace.yml.j2"
+          - path: "web_ingress.yml.j2"
+          - path: "web_service.yml.j2"
+          - path: "web_deployment.yml.j2"
+        wait: true
+...

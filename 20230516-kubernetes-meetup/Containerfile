@@ -1,0 +1,17 @@
+FROM docker.io/library/golang:1.20 AS builder
+
+WORKDIR /app
+
+COPY go/ /app/
+
+RUN go mod init web
+RUN go mod tidy
+RUN go build -o /app/web /app/web_hostname.go
+
+FROM docker.io/library/debian:latest
+
+COPY --from=builder /app/web /web
+
+EXPOSE 8080/tcp
+
+CMD ["/web"]

@@ -1,8 +1,6 @@
 # reference: https://git-scm.com/docs/gitattributes
-
 # end of line conversion
 * text=auto
-
 # ignore for export / release
 /.github export-ignore
 /assets export-ignore
@@ -14,8 +12,9 @@
 .gitignore export-ignore
 .gitmessages export-ignore
 .yamllint export-ignore
-
 # track lfs
 **/*.pdf filter=lfs diff=lfs merge=lfs -text
 **/*.png filter=lfs diff=lfs merge=lfs -text
 **/*.jpg filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+**/*.ogg filter=lfs diff=lfs merge=lfs -text

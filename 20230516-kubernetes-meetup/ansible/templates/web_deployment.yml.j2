@@ -1,0 +1,27 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "web-deployment"
+  namespace: "web"
+spec:
+  selector:
+    matchLabels:
+      app: "web"
+  replicas: {{ web_replicas }}
+  template:
+    metadata:
+      labels:
+        app: "web"
+    spec:
+      containers:
+        - name: "web"
+          image: "docker.io/library/nginx:latest"
+          resources:
+            limits:
+              memory: "{{ web_limit_memory }}"
+              cpu: "{{ web_limit_cpu }}"
+          ports:
+            - name: "http-web"
+              containerPort: 80
+...
