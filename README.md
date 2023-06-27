@@ -32,7 +32,17 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
-#### Ansible - Dynamic Inventories
+#### DevOps Ideals - Simplicity & Locality
+
+A practical guide to apply simplicity and locality to your code.
+
+- event: Ad-Hoc presentation
+- type: short talk
+- date: 27.06.2023
+- language: english
+- links: [demo, code and presentation](./20230627-devops-simplicity/)
+
+#### Ansible - IoT
 
 A short talk about IoT with Ansible and Podman.
 

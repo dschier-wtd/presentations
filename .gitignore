@@ -4,6 +4,9 @@
 dist/
 tmp/
 
+# Python
+.venv/
+
 # dependencies
 bower_components/
 node_modules/

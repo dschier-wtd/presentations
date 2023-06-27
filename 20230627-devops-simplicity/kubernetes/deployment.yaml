@@ -1,0 +1,26 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "hello-deployment"
+  namespace: "hello"
+spec:
+  selector:
+    matchLabels:
+      component: "web"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: "web"
+    spec:
+      containers:
+        - name: "hello"
+          image: "docker.io/dschier/go-hello:latest"
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "250m"
+          ports:
+            - containerPort: 3000
+...

@@ -1,0 +1,7 @@
+---
+# .mkdocs.yaml
+
+site_name: MkLorum
+site_url: https://example.com/
+theme: material
+...
