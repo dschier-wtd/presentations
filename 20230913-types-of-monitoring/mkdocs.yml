@@ -1,0 +1,6 @@
+---
+# mkdocs.yaml
+
+site_name: Types and kinds of monitoring
+theme: material
+...

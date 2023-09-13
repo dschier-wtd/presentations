@@ -32,6 +32,26 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
+#### DevOps Meetup - Types and Kinds of Monitoring
+
+A short intro talk to our DevOps Saxony meetup about monitoring.
+
+- event: DevOps Saxony meetup
+- type: short talk
+- data: 13.09.2023
+- language: english
+- links: [presentation](./20230913-types-of-monitoring/)
+
+#### Cloud Architecture Discussion
+
+Provided an example architecture for a cloud hosted checkmk environment.
+
+- event: Ad-Hoc presentation
+- type: short talk/open discussion
+- date: 17.08.2023
+- language: english
+- links: [presentation](./20230817-cloud-architectures/)
+
 #### DevOps Ideals - Simplicity & Locality
 
 A practical guide to apply simplicity and locality to your code.
