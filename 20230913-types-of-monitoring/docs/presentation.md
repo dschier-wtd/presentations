@@ -28,9 +28,9 @@ _paginate: skip
 
 We are doing DevOps Saxony and more:
 
-- [Kubernetes & Cloud Native User Group]()
-- [Ansible Meetup Dresden]()
-- [Dresden OpenSource UserGroup]()
+- [Kubernetes & Cloud Native User Group](https://www.meetup.com/de-DE/kubernetes-and-cloud-native-group-dresden/)
+- [Ansible Meetup Dresden](https://www.meetup.com/de-DE/ansible-meetup-dresden/)
+- [Dresden OpenSource UserGroup](https://www.meetup.com/ddos-usergroup/)
 
 ---
 <!--
