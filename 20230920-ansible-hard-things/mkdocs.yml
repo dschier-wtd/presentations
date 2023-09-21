@@ -1,0 +1,6 @@
+---
+# mkdocs.yaml
+
+site_name: Ansible - The hard things
+theme: material
+...

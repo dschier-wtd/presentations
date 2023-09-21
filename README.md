@@ -32,6 +32,16 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
+#### Ansible - The hard way/things
+
+A talk for the Ansible Community Day Berlin 2023
+
+- event: [Ansible Community Day](https://www.ansible.com/blog/ansible-community-day-berlin-2023)
+- type: short talk
+- data: 20.09.2023
+- language: english
+- links: [presentation](./20230920-ansible-hard-things/)
+
 #### DevOps Meetup - Types and Kinds of Monitoring
 
 A short intro talk to our DevOps Saxony meetup about monitoring.
