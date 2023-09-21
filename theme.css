@@ -88,19 +88,28 @@ marp-pre {
 }
 
 /*Code blok*/
+.hljs,
+.hljs-subst,
+.hljs-string,
+.hljs-section,
+.hljs-operator,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion,
+.hljs-number,
+.hljs-bullet {
+  color: var(--gold);
+}
 .hljs-comment {
   color: var(--muted);
 }
-.hljs-attr {
-  color: var(--foam);
-}
+.hljs-meta,
 .hljs-punctuation {
   color: var(--subtle);
 }
-.hljs-string {
-  color: var(--gold);
-}
-.hljs-title {
+.hljs-title,
+.hljs-attr,
+.hljs-symbol {
   color: var(--foam);
 }
 .hljs-keyword {
@@ -112,21 +121,11 @@ marp-pre {
 .hljs-literal {
   color: var(--rose);
 }
-.hljs-type {
-  color: var(--love);
-}
-.hljs-number {
-  color: var(--gold);
-}
+.hljs-type,
 .hljs-built_in {
-  color: var(--love);
+    color: var(--love);
 }
 .hljs-params {
   color: var(--iris);
 }
-.hljs-symbol {
-  color: var(--foam);
-}
-.hljs-meta {
-  color: var(--subtle);
-}
+
