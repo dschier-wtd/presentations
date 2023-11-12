@@ -187,10 +187,10 @@ The unit test (go)
 
 ```shell
 # Run unit tests
-$ go test -v ./...
+$ go test -v .
 
 # Maybe with coverage?
-$ go test -v -cover ./...
+$ go test -v -cover .
 ```
 
 Go has some awesome built-in capabilities.
