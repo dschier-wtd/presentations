@@ -32,13 +32,24 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
+#### DevOps Ideals
+
+A talk for the [Tux Tage 2023](https://www.tux-tage.de/) about DevOps and
+how can have a local development, build, release environment.
+
+- event: [Tux Tage 2023](https://www.tux-tage.de/)
+- type: guide/tutorial
+- date: 12.11.2023
+- language: english/german
+- links: [slides & code](./20231112-devops-simplicity/)
+
 #### Ansible - The hard way/things
 
 A talk for the Ansible Community Day Berlin 2023
 
 - event: [Ansible Community Day](https://www.ansible.com/blog/ansible-community-day-berlin-2023)
 - type: short talk
-- data: 20.09.2023
+- date: 20.09.2023
 - language: english
 - links: [presentation](./20230920-ansible-hard-things/)
 
@@ -48,7 +59,7 @@ A short intro talk to our DevOps Saxony meetup about monitoring.
 
 - event: DevOps Saxony meetup
 - type: short talk
-- data: 13.09.2023
+- date: 13.09.2023
 - language: english
 - links: [presentation](./20230913-types-of-monitoring/)
 
