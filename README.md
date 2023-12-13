@@ -32,7 +32,7 @@ you. Most recordings are done in German language, though.
 
 ### 2023
 
-#### DevOps Ideals
+#### DevOps Meetup - Enterprise Linux
 
 Giving an overview about Enterprise Linux like AlmaLinux OS, Rocky Linux or
 RHEL and Ubuntu LTS.
@@ -43,7 +43,7 @@ RHEL and Ubuntu LTS.
 - language: english/german
 - links: [slides & code](./20231212-enterprise-linux/)
 
-#### DevOps Ideals
+#### Tux Tage - sDevOps Ideals
 
 A talk for the [Tux Tage 2023](https://www.tux-tage.de/) about DevOps and
 how can have a local development, build, release environment.
