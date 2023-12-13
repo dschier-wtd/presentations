@@ -34,6 +34,17 @@ you. Most recordings are done in German language, though.
 
 #### DevOps Ideals
 
+Giving an overview about Enterprise Linux like AlmaLinux OS, Rocky Linux or
+RHEL and Ubuntu LTS.
+
+- event: DevOps Saxony Meetup
+- type: overview/impulse talk
+- date: 12.12.2023
+- language: english/german
+- links: [slides & code](./20231212-enterprise-linux/)
+
+#### DevOps Ideals
+
 A talk for the [Tux Tage 2023](https://www.tux-tage.de/) about DevOps and
 how can have a local development, build, release environment.
 
