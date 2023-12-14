@@ -43,7 +43,7 @@ RHEL and Ubuntu LTS.
 - language: english/german
 - links: [slides & code](./20231212-enterprise-linux/)
 
-#### Tux Tage - sDevOps Ideals
+#### Tux Tage - DevOps Ideals
 
 A talk for the [Tux Tage 2023](https://www.tux-tage.de/) about DevOps and
 how can have a local development, build, release environment.
