@@ -30,6 +30,18 @@ I am trying to gather my presentation content in this repository now. Since my
 slides and example code is always in **English** language, it may be useful for
 you. Most recordings are done in German language, though.
 
+### 2024
+
+#### DevOps Meetup - Let's pipeline
+
+A high level presentation about designing and creating pipelines with GitLab.
+
+- event: DevOps Saxony Meetup
+- type: overview/impulse talk
+- date: 18.01.2024
+- language: english/german
+- links: [slides](./20240118-pipelines-gitlab/)
+
 ### 2023
 
 #### DevOps Meetup - Enterprise Linux
