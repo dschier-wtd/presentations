@@ -32,6 +32,17 @@ you. Most recordings are done in German language, though.
 
 ### 2024
 
+#### DecompileD - DevOps Ideals
+
+A presentation at the [DecompileD](https://decompiled.de/) conference to
+showcase how simple DevOps can be.
+
+- event: DecompileD
+- type: lecture
+- date: 08.03.2024
+- language: english
+- links: [slides & code](./20240308-devops-simplicity/)
+
 #### DevOps Meetup - Let's pipeline
 
 A high level presentation about designing and creating pipelines with GitLab.
