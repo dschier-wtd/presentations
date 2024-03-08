@@ -3,7 +3,8 @@ marp: true
 theme: "default"
 author: "Daniel Schier"
 title: "DevOps Ideals - Simplicity & Locality"
-footer: "CC-BY SA 4.0 - by Daniel Schier @ DecompileD 2024"
+header: "DecompileD 2024"
+footer: "CC-BY SA 4.0 - Daniel Schier"
 
 paginate: true
 
@@ -25,6 +26,18 @@ style: |
 A practical guide to simpler workflows and local build environments.
 
 </div>
+
+---
+
+## :wave: Hi
+
+- :man: Daniel Schier
+- :computer: Some might say, I am a "DevOps engineer", ...
+- :hammer: ... but I see myself as an IT craftsman.
+- :floppy_disk: I am also contributing to Open Source, democratizing software.
+- :pencil: I do some blogging, conferences and organize meetups.
+- :heart: I love cats, cooking, coffee, cookies, computer thingies, ...
+- :penguin: ... and penguins, of course.
 
 ---
 
@@ -50,15 +63,11 @@ Let's get the ball rolling.
 
 ---
 
-## :wave: Hi
+![hand bg right](./assets/hand_raised.jpg)
 
-- :man: Daniel Schier
-- :computer: Some might say, I am a "DevOps engineer", ...
-- :hammer: ... but I see myself as an IT craftsman.
-- :floppy_disk: I am also contributing to Open Source, democratizing software.
-- :pencil: I do some blogging, conferences and organize meetups.
-- :heart: I love cats, cooking, coffee, cookies, computer thingies, ...
-- :penguin: ... and penguins, of course.
+### :speaker: DevOps in the audience
+
+If you hear **DevOps**, what is in your mind?
 
 ---
 
