@@ -32,6 +32,18 @@ you. Most recordings are done in German language, though.
 
 ### 2024
 
+#### CLT2024 - plain/text & DevOps
+
+A presentation at the Chemnitzer Linux Days (CLT) with a focus on plaintext
+documents and how one can use these in a Developer/DevOps life.
+
+- event: Chmenitzer Linux Tage 2024
+- type: lecture
+- date: 16.03.2024
+- language: german
+- links: [slides & code](./20240316-plain-text/)
+- links: [accouncement & stream](https://chemnitzer.linux-tage.de/2024/en/programm/beitrag/217)
+
 #### DecompileD - DevOps Ideals
 
 A presentation at the [DecompileD](https://decompiled.de/) conference to

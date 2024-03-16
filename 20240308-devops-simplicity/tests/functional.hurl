@@ -1,4 +1,4 @@
 GET http://{{host}}/
-GET http://{{host}}/time
+GET http://{{host}}/health
 
 HTTP 200
