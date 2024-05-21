@@ -32,6 +32,26 @@ you. Most recordings are done in German language, though.
 
 ### 2024
 
+#### DevOps Meetup - DevOps Origins
+
+A lecture about the origins of DevOps.
+
+- event: DevOps Saxony Meetup
+- type: lecture
+- date: 15.05.2024
+- language: -
+- links: [presentation](./20240515-devops-origins/)
+
+#### DevOps Meetup - Cross Platform builds
+
+A demonstration of building containers for cross platform use cases.
+
+- event: DevOps Saxony Meetup
+- type: lecture
+- date: 18.04.2024
+- language: -
+- links: [code](./20240418-cross-platform/)
+
 #### CLT2024 - plain/text & DevOps
 
 A presentation at the Chemnitzer Linux Days (CLT) with a focus on plaintext
